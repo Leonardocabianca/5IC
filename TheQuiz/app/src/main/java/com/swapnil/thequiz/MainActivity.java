@@ -79,9 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // check if the request code is 1 (we came from 1 ... )
             if (resultCode == RESULT_OK) {
-                // data passed in using getStringExtra() via Intent data
                 String res = data.getStringExtra("res");
                 String user = data.getStringExtra("user");
                 if(res.equals("ok")) {
@@ -91,8 +89,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, user + " NON Hai passato il quiz correttamente!!",
                             Toast.LENGTH_SHORT).show();
                 }
-
-            }
-
+         }
     }
 }
