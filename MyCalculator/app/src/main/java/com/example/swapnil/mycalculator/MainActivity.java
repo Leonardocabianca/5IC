@@ -202,8 +202,8 @@ public class MainActivity extends AppCompatActivity {
             double parseExpression() {
                 double x = parseTerm();
                 for (;;) {
-                    if      (eat('+')) x += parseTerm(); // addition
-                    else if (eat('-')) x -= parseTerm(); // subtraction
+                    if      (eat('+')) x += parseTerm(); // addizione
+                    else if (eat('-')) x -= parseTerm(); // sottrazione
                     else return x;
                 }
             }
@@ -211,15 +211,15 @@ public class MainActivity extends AppCompatActivity {
             double parseTerm() {
                 double x = parseFactor();
                 for (;;) {
-                    if      (eat('*')) x *= parseFactor(); // multiplication
-                    else if (eat('/')) x /= parseFactor(); // division
+                    if      (eat('*')) x *= parseFactor(); // moltiplicazione
+                    else if (eat('/')) x /= parseFactor(); // divisione
                     else return x;
                 }
             }
 
             double parseFactor() {
-                if (eat('+')) return parseFactor(); // unary plus
-                if (eat('-')) return -parseFactor(); // unary minus
+                if (eat('+')) return parseFactor();
+                if (eat('-')) return -parseFactor(); 
 
                 double x;
                 int startPos = this.pos;
@@ -232,7 +232,11 @@ public class MainActivity extends AppCompatActivity {
                 }  else {
                     throw new RuntimeException("Unexpected: " + (char)ch);
                 }
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> ad74a29f0ee15d73afaa99d956cb1e8d83f40d10
                 return x;
             }
         }.parse();
