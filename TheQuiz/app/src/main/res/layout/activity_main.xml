@@ -63,4 +63,17 @@
         android:layout_alignBottom="@+id/button01"
         android:layout_alignParentEnd="true" />
 
+    <Button
+        android:text="View Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textColorHighlight="@color/textColor"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/btnRank" />
+
 </RelativeLayout>

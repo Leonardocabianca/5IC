@@ -48,6 +48,8 @@ public class QuizActivity extends Activity {
 
         final TextView tx = (TextView) findViewById(R.id.txtViewQuestion);
 
+        Button finish = (Button) findViewById(R.id.btnNext);
+
 
         DatabaseHelper myDbHelper = new DatabaseHelper(QuizActivity.this);
         try {
@@ -80,9 +82,8 @@ public class QuizActivity extends Activity {
             j=-1;
         }
 
-        ((Button) findViewById(R.id.btnNext)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        finish.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
                 qz = arr.get(cout);
                 tx.setText(qz.getQuestion());
 
@@ -96,15 +97,25 @@ public class QuizActivity extends Activity {
                 cout++;
                 ++j;
                 if(((cout == arr.size())&&quizNum==2) || ((cout==(arr.size()/2)+1) && quizNum==1)){
+                    String res = "noOk";
                     DatabaseHelper dh = new DatabaseHelper(QuizActivity.this);
                     dh.updateDB(user,"" + punteggio + "/" + arr.size()/2);
-                    Intent intent = new Intent(QuizActivity.this, RankActivity.class);
-                    startActivity(intent);
+                    if(punteggio>(arr.size()/2)-1){
+                        res = "ok";
+                    }
+
+                    Intent intent = new Intent(QuizActivity.this, MainActivity.class);
+                    intent.putExtra("user",user);
+                    intent.putExtra("res", res);
+                    QuizActivity.this.setResult(RESULT_OK, intent);
+                    QuizActivity.this.finish();
                 }
 
 
             }
         });
+
+
 
     }
 }

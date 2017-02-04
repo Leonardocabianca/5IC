@@ -9,11 +9,19 @@
     <ListView
         android:id="@+id/rankList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="470dp"
         android:layout_alignParentBottom="false"
         android:layout_alignParentLeft="true" >
 
     </ListView>
+
+    <Button android:id="@+id/returnHomeBtn"
+        android:text="Return to home"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
 
 
 

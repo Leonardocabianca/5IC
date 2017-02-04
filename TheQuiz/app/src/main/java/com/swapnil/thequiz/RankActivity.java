@@ -1,10 +1,13 @@
 package com.swapnil.thequiz;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.io.IOException;
@@ -51,5 +54,19 @@ public class RankActivity  extends AppCompatActivity {
         ListView LV = (ListView)findViewById(R.id.rankList);
         LV.smoothScrollToPosition(0);
         LV.setAdapter(adapter);
+
+        ((Button) findViewById(R.id.returnHomeBtn)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("corretto", "2");
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                startActivity(intent);
+
+
+            }
+        });
     }
 }
