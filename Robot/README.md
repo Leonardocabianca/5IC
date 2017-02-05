@@ -41,10 +41,9 @@ Data la moltitudine di frasi componibili, ho dato la possibilità al Robot di "i
 voglia. Ciò rende i file più popolati, alzando la possibilità che il Robot risponda nel migliore dei modi.
 
 ##Librerie Esterne
-L'utilizzo di file Json in Java deve essere supportato da librerie scaricabili a parte. Le librerie che mi sono servite per realizzare
-questo progetto sono state le seguenti:
-```
-commons-lang.jar
-json-simple.jar
-gson.jar
-```
+L'utilizzo di file Json in Java deve essere supportato da librerie scaricabili a parte. Le librerie non sono presenti nel repository per tanto bisogna scaricarle a parte. Le librerie che mi sono servite per realizzare questo progetto sono state le seguenti:
+
+[commons-lang.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9YVkyVV9JeG5Rbnc)
+[json-simple.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9T1Vla2x6UHhydFU)
+[gson.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9ZGV2WXZZRFAzR28)
+
