@@ -35,9 +35,10 @@ Ho avuto parecchi problemi nell'invio di immagini, però poi sono stati sistemat
 ##Librerie Esterne
 Per la creazione di un ottima grafica mi son serviti i componenti della libreria jfoenix e font-awesome, mentre per la gestione e 
 l'interazione del database con le classi del progetto mi è servita la libreria sqlite.
+Le librerie non sono presenti nel repository per tanto bisogna scaricarle a parte.
 Le librerie che mi sono servite per realizzare questo progetto sono state le seguenti:
-```
+
 [jfoenix.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9S293NElMZUNuNUk)
 [font-awesome.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9bTRwYzVhZk5jVnM)
 [sqlite-db.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9WDM4dWYyYTFQdTQ)
-```
+
