@@ -37,7 +37,7 @@ Per la creazione di un ottima grafica mi son serviti i componenti della libreria
 l'interazione del database con le classi del progetto mi è servita la libreria sqlite.
 Le librerie che mi sono servite per realizzare questo progetto sono state le seguenti:
 ```
-jfoenix.jar
-font-awesome.jar
-sqlite-db.jar
+[jfoenix.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9S293NElMZUNuNUk)
+[font-awesome.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9bTRwYzVhZk5jVnM)
+[sqlite-db.jar](https://drive.google.com/open?id=0Bxy2O-D-aRs9WDM4dWYyYTFQdTQ)
 ```
