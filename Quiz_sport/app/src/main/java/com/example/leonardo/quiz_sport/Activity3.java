@@ -13,8 +13,6 @@ public class Activity3 extends AppCompatActivity {
 
 
 
-    public class Activity_Three extends AppCompatActivity {
-
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -35,14 +33,14 @@ public class Activity3 extends AppCompatActivity {
                     if (vero1.isChecked() && vero2.isChecked() && falso3.isChecked() && vero4.isChecked()){
                         Intent i = new Intent();
                         i.putExtra("corretto", "2");
-                        Activity_Three.this.setResult(RESULT_OK, i);
-                        Activity_Three.this.finish();
+                        Activity3.this.setResult(RESULT_OK, i);
+                        Activity3.this.finish();
 
                     } else{
                         Intent i = new Intent();
                         i.putExtra("corretto","3");
-                        Activity_Three.this.setResult(RESULT_OK, i);
-                        Activity_Three.this.finish();
+                        Activity3.this.setResult(RESULT_OK, i);
+                        Activity3.this.finish();
                     }
 
                 }
@@ -50,5 +48,5 @@ public class Activity3 extends AppCompatActivity {
         }
     }
 
-}
+
 

@@ -15,8 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity2" />
-        <activity android:name=".Activity3"></activity>
+        <activity android:name=".Activity2">
+            <intent-filter>
+                <action android:name="com.example.leonardo.quiz_sport.Activity2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+        </activity>
+        <activity android:name=".Activity3">
+            <intent-filter>
+                <action android:name="com.example.leonardo.quiz_sport.Activity3"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

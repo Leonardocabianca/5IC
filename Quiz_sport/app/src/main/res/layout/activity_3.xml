@@ -73,18 +73,17 @@ android:background="@android:color/background_dark">
         android:text="@string/false_name"
         android:onClick="onRadioButtonClicked"
         android:layout_marginEnd="38dp"
-        app:buttonTint="@android:color/holo_red_light"
+        android:buttonTint="@color/falseC"
         android:textColor="@android:color/background_light" />
 
     <RadioButton android:id="@+id/rtrue2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/true_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginStart="31dp"
         android:checked="false"
         android:duplicateParentState="false"
-        app:buttonTint="@android:color/holo_green_dark"
+        android:buttonTint="@color/trueC"
         android:textColor="@android:color/background_light" />
 
 </RadioGroup>
@@ -103,10 +102,9 @@ android:background="@android:color/background_dark">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/false_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginEnd="38dp"
         style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
-        app:buttonTint="@android:color/holo_red_light"
+        android:buttonTint="@color/falseC"
         android:textColor="@android:color/background_light" />
 
     <RadioButton
@@ -114,9 +112,8 @@ android:background="@android:color/background_dark">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/true_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginStart="31dp"
-        app:buttonTint="@android:color/holo_green_dark"
+        android:buttonTint="@color/trueC"
         android:textColor="@android:color/background_light" />
 
 </RadioGroup>
@@ -135,18 +132,16 @@ android:background="@android:color/background_dark">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/false_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginEnd="38dp"
-        app:buttonTint="@android:color/holo_red_light"
+        android:buttonTint="@color/falseC"
         android:textColor="@android:color/background_light" />
 
     <RadioButton android:id="@+id/rtrue3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/true_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginStart="31dp"
-        app:buttonTint="@android:color/holo_green_dark"
+        android:buttonTint="@color/trueC"
         android:textColor="@android:color/background_light" />
 
 </RadioGroup>
@@ -164,18 +159,16 @@ android:background="@android:color/background_dark">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/false_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginEnd="38dp"
-        app:buttonTint="@android:color/holo_red_light"
+        android:buttonTint="@color/falseC"
         android:textColor="@android:color/background_light" />
 
     <RadioButton android:id="@+id/rtrue4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/true_name"
-        android:onClick="onRadioButtonClicked"
         android:layout_marginStart="31dp"
-        app:buttonTint="@android:color/holo_green_dark"
+        android:buttonTint="@color/trueC"
         android:textColor="@android:color/background_light" />
 
 </RadioGroup>
@@ -188,12 +181,11 @@ android:background="@android:color/background_dark">
         android:background="@android:color/darker_gray"
         android:visibility="visible"
         android:text="Completato"
-        android:onClick="checkAnswer"
         android:textAppearance="@android:style/TextAppearance.Medium.Inverse"
         android:textColor="@android:color/holo_red_dark"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/radioGroup7" />
+        />
 
 
 </RelativeLayout>
