@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast toast = Toast.makeText(context, "BTNFACILE", duration);
                 toast.show();
-                startActivityForResult(i, ACTIVITY_TWO);
+                startActivityForResult(i, ACTIVITY_THREE);
             }
         });
 
@@ -52,16 +52,18 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode,
                                  int resultCode, Intent data) {
         TextView res = (TextView) findViewById(R.id.mainResult);
-
-
-
-        res.setText(data.getStringExtra("status"));
+        //res.setText(data.getStringExtra("status"));
 
 
         if (requestCode == ACTIVITY_THREE) {
             if (resultCode == RESULT_OK) {
-                Toast.makeText(this, data.getStringExtra("isOk"),
-                        Toast.LENGTH_SHORT).show();
+                res.setText(data.getExtras().getString("status"));
+            }
+        }
+
+        if (requestCode == ACTIVITY_TWO) {
+            if (resultCode == RESULT_OK) {
+                res.setText(data.getExtras().getString("status"));
             }
         }
     }
